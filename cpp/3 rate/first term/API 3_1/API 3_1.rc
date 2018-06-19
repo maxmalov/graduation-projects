@@ -1,0 +1,15 @@
+//Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+#include "windows.h"
+
+IDI_API3_1       ICON         "API 3_1.ico"
+IDI_SMALL               ICON         "small.ico"
+
+STRINGTABLE
+BEGIN
+   IDC_API3_1   "API3_1"
+   IDS_APP_TITLE       "API 3_1"
+END
+
+

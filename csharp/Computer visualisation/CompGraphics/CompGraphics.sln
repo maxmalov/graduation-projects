@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinApp", "WinApp\WinApp.csproj", "{48DF1C47-BB79-410D-AA3F-06BCC5436D7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{47052675-513F-4311-B0D0-0D45C5417D7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48DF1C47-BB79-410D-AA3F-06BCC5436D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48DF1C47-BB79-410D-AA3F-06BCC5436D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48DF1C47-BB79-410D-AA3F-06BCC5436D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48DF1C47-BB79-410D-AA3F-06BCC5436D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47052675-513F-4311-B0D0-0D45C5417D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47052675-513F-4311-B0D0-0D45C5417D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47052675-513F-4311-B0D0-0D45C5417D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47052675-513F-4311-B0D0-0D45C5417D7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

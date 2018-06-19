@@ -1,0 +1,3 @@
+Conditionality: 160400
+Residual norm: 5.39291e-014
+Elapsed time: 59.797 seconds

@@ -1,0 +1,27 @@
+ Absolute residual = 9.82254e-011
+ Relative residual = 1.20095e-014
+ Absolute error = 5.55409e-011
+ Relative error = 2.77705e-011
+Iterations : 138594
+Elapsed time: 4.754 seconds
+ 
+Absolute residual = 9.91349e-011
+ Relative residual = 1.21207e-014
+ Absolute error = 5.55109e-011
+ Relative error = 2.77555e-011
+Iterations : 131966
+Elapsed time: 4.526 seconds
+ 
+Absolute residual = 8.73115e-011
+ Relative residual = 1.06553e-015
+ Absolute error = 5.77465e-011
+ Relative error = 2.88732e-011
+Iterations : 1332170
+Elapsed time: 46.165 seconds 
+
+Absolute residual = 9.82254e-011
+ Relative residual = 9.20422e-016
+ Absolute error = 7.37699e-011
+ Relative error = 3.68849e-011
+Iterations : 1292980
+Elapsed time: 46.741 seconds

@@ -1,0 +1,64 @@
+_______________________________________________________________________________________________________
+Conditionality: 100
+Size: 5
+Accuracy: 1e-010
+
+Absolute residual: 1.77636e-012
+Relative residual: 1.77636e-014
+Iterations: 28
+Elapsed time: 0.008
+_______________________________________________________________________________________________________
+Conditionality: 1000
+Size: 5
+Accuracy: 1e-010
+
+Absolute residual: 6.82121e-013
+Relative residual: 6.82121e-016
+Iterations: 28
+Elapsed time: 0.01
+_______________________________________________________________________________________________________
+Conditionality: 100000
+Size: 5
+Accuracy: 1e-010
+
+Absolute residual: 5.82077e-011
+Relative residual: 5.82077e-016
+Iterations: 26
+Elapsed time: 0
+_______________________________________________________________________________________________________
+Conditionality: 1e+006
+Size: 5
+Accuracy: 1e-009
+
+Absolute residual: 5.82077e-010
+Relative residual: 5.82077e-016
+Iterations: 29
+Elapsed time: 0.033
+_______________________________________________________________________________________________________
+Conditionality: 9e+006
+Size: 100
+Accuracy: 1e-005
+
+Absolute residual: 6.70552e-008
+Relative residual: 7.45058e-015
+Iterations: 14669
+Elapsed time: 19.144
+
+_______________________________________________________________________________________________________
+Conditionality: 9e+006
+Size: 300
+Accuracy: 1e-010
+
+Absolute residual: 1.80677e-007
+Relative residual: 2.00752e-014
+Iterations: 178223
+Elapsed time: 698.671
+_______________________________________________________________________________________________________
+Conditionality: 9e+006
+Size: 500
+Accuracy: 1e-009
+
+Absolute residual: 2.6077e-007
+Relative residual: 2.89745e-014
+Iterations: 426561
+Elapsed time: 3317.89

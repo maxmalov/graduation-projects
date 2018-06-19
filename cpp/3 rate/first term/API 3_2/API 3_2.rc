@@ -1,0 +1,375 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CHOOSEBMP DIALOGEX 0, 0, 190, 199
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose picture"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,66,178,37,14
+    PUSHBUTTON      "Cancel",IDCANCEL,124,178,40,14
+    CONTROL         "Triangle",IDD_TRIANGLE,"Button",BS_AUTORADIOBUTTON,31,33,41,10
+    CONTROL         "Rectangle",IDD_RECTANGLE,"Button",BS_AUTORADIOBUTTON,110,33,48,10
+    CONTROL         "Circle",IDD_CIRCLE,"Button",BS_AUTORADIOBUTTON,29,100,33,10
+    CONTROL         "All together",IDD_ALLTOGETHER,"Button",BS_AUTORADIOBUTTON,109,98,53,10
+    LTEXT           "Choose picture you want to draw",IDDT_CHOOSEDLGTITLE,47,14,109,8
+    CONTROL         1046,IDC_PICTALLTOGETHER,"Static",SS_BITMAP | SS_NOTIFY | SS_RIGHTJUST | SS_REALSIZEIMAGE,111,115,54,48,WS_EX_ACCEPTFILES,HIDC_PICTALLTOGETHER
+    CONTROL         1045,IDC_PICTCIRCLE,"Static",SS_BITMAP,27,116,51,45
+    CONTROL         1043,IDC_PICTRECTANGLE,"Static",SS_BITMAP,116,47,52,47
+    CONTROL         1044,IDC_PICTTRIANGLE,"Static",SS_BITMAP,24,46,53,47
+END
+
+IDD_SETDIMS DIALOGEX 0, 0, 180, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set dimensions"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Ok",IDOK,91,92,33,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,92,34,14
+    LTEXT           "Rectangle width",IDC_STATIC,26,16,52,8
+    LTEXT           "Rectangle height",IDC_STATIC,99,16,55,8
+    EDITTEXT        IDC_RECTWEDIT,27,31,40,13
+    CONTROL         "",IDC_RECTWSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,66,30,10,14
+    EDITTEXT        IDC_RECTHEDIT,102,31,40,13
+    CONTROL         "",IDC_RECTHSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,141,30,10,14
+    LTEXT           "Circle radius",IDC_STATIC,69,55,40,8
+    CONTROL         "",IDC_CIRCSLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,14,69,151,15,WS_EX_TRANSPARENT
+END
+
+IDD_ANIM DIALOGEX 0, 0, 219, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Animation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Выход",IDOK,153,136,50,14
+    CONTROL         "",IDC_ANIMATE,"SysAnimate32",WS_BORDER | WS_TABSTOP,19,7,173,94
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,18,136,123,14
+    LTEXT           "Загрузка анимации...",IDC_STATIC,20,126,74,8
+END
+
+IDD_LISTVIEW DIALOGEX 0, 0, 393, 281
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "List view"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,379,240
+    PUSHBUTTON      "Add",IDC_ADDITEM,7,254,60,11
+    PUSHBUTTON      "Remove",IDC_REMOVEITEM,145,255,61,11
+    PUSHBUTTON      "Edit",IDC_EDITITEM,75,255,61,11
+END
+
+IDD_ADDITEM DIALOGEX 0, 0, 162, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,89,124,30,14
+    PUSHBUTTON      "Cancel",IDCANCEL,127,124,28,14
+    EDITTEXT        IDC_ITEMNAME,19,52,106,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ITEMCREATOR,20,86,104,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ITEMDATE,20,119,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_ITEMDATESPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,59,118,11,14
+    COMBOBOX        IDC_ITEMTYPE,19,22,106,100,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Item type",IDC_STATIC,22,12,32,8
+    LTEXT           "Item name",IDC_STATIC,23,43,35,8
+    LTEXT           "Item author / producer",IDC_STATIC,23,76,74,8
+    LTEXT           "Manufacture date",IDC_STATIC,23,109,58,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CHOOSEBMP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_SETDIMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_ANIM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_LISTVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_ADDITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EXITASKBOX DIALOGEX 200, 150, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About API 3_2"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            128,IDC_STATIC,14,14,20,20
+    LTEXT           "Do you want to save your picture?",IDC_STATIC,42,19,114,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "Yes",IDOK,22,41,50,14,WS_GROUP
+    DEFPUSHBUTTON   "No",IDCANCEL,99,41,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_EXITASKBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR_BITMAP      BITMAP                  "toolbar.bmp"
+IDB_CIRCLE              BITMAP                  "circle.bmp"
+IDB_RECTANGLE           BITMAP                  "rectangle.bmp"
+IDB_TRIANGLE            BITMAP                  "triangle.bmp"
+IDB_COMBO               BITMAP                  "combo.bmp"
+IDB_RECTSMALL           BITMAP                  "rectanglesmall.bmp"
+IDB_TRISMALL            BITMAP                  "trianglesmall.bmp"
+IDB_CIRCSMALL           BITMAP                  "circlesmall.bmp"
+IDB_COMBOSMALL          BITMAP                  "combosmall.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_API3_2              ICON                    "API 3_2.ico"
+IDI_SMALL               ICON                    "small.ico"
+IDI_CAR                 ICON                    "car.ico"
+IDI_BOOK                ICON                    "book.ico"
+IDI_FRUIT               ICON                    "fruit.ico"
+IDI_OTHER               ICON                    "other.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_API3_2 MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Load",                       IDM_LOAD
+        MENUITEM "&Save as...",                 IDM_SAVEAS
+        MENUITEM "Copy",                        IDM_COPY
+        MENUITEM "Paste",                       IDM_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Draw mode"
+    BEGIN
+        MENUITEM "&Cirle",                      IDM_CIRCLE
+        MENUITEM "&Rectangle",                  IDM_RECT
+        MENUITEM "&Triangle",                   IDM_TRIANGLE
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Font",                        IDM_FONT
+        MENUITEM "Color",                       IDM_BRUSH
+        MENUITEM "Background",                  IDM_OPEN
+        MENUITEM "Set dimensions",              IDM_SETDIMS
+        MENUITEM SEPARATOR
+        MENUITEM "List view",                   IDM_BOOKLIST
+    END
+    POPUP "Animation"
+    BEGIN
+        MENUITEM "See demo",                    IDM_ANIMATION_SEEDEMO
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "API 3_2"
+    IDC_API3_2              "API3_2"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BRUSH               "Brush"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEXT                "Text settings"
+    IDS_TEXTCLASS           "Text watcher"
+    IDS_RECTW               "Rect width"
+    IDS_RECTH               "Rect height"
+    IDS_CIRCLER             "Circle radius"
+    IDS_ANIMPATH            "red_dragon.avi"
+    IDS_AUTOMOBILEITEM      "Auto"
+    IDS_BOOKITEM            "Book"
+    IDS_FRUITITEM           "Fruit"
+    IDS_OTHERITEM           "Other"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRAWCIRCLES         "Circles"
+    IDS_DRAWRECTANGLES      "Rectangles"
+    IDS_DRAWTRIANGLES       "Triangles"
+    IDS_TOOLTIP_CIRCLE      "Left mouse click draws circle"
+    IDS_TOOLTIP_RECTANGLE   "Left mouse click draws rectangle"
+    IDS_TOOLTIP_TRIANGLE    "Left mouse click draws triangle"
+    IDC_API3_2_VIEW         "API3_2 view"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ITEM                "Item type"
+    IDS_ITEMNAME            "Item name"
+    IDS_ITEMFROM            "Creator/producer"
+    IDS_ITEMDATE            "Manufacture date"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
